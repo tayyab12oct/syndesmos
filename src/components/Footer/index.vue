@@ -47,7 +47,7 @@
             </li>
           </ul>
         </div>
-        <div class="space-y-5 md:col-span-2 lg:col-span-2">
+        <div class="space-y-5 md:col-span-2 lg:col-span-1">
           <div>
             <h3 class="text-xs text-gray-600 font-medium">Syndesmos S.A</h3>
             <p class="text-xs text-gray-500 font-light">
