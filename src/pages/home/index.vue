@@ -7,7 +7,7 @@
       <Feed />
       <Newsletter />
     </div>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 <script setup>
