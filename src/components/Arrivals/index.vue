@@ -3,7 +3,7 @@
     <div
       v-for="v in data"
       :key="v"
-      class="group relative bg-gray-50 lg:h-[500px] md:h-[400px] h-[250px]"
+      class="group relative bg-gray-50 lg:h-[500px] md:h-[400px] h-[200px]"
     >
       <img :src="v.src" alt="product" class="w-full h-full" />
       <div
