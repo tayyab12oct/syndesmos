@@ -4,7 +4,7 @@
     <div class="grid md:grid-cols-6 grid-cols-3 gap-1 md:pt-5 pt-3">
       <div v-for="v in 6" :key="v" class="group relative lg:h-54 h-30">
         <img
-          src="hero/anti_hair_loss_solutions.png"
+          src="/hero/anti_hair_loss_solutions.png"
           alt="product"
           class="w-full h-full"
         />
