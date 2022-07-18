@@ -1,97 +1,97 @@
 <template>
-  <footer
-    class="bg-gray-100 border-t border-gray-300"
-    aria-labelledby="footer-heading"
-  >
-    <div class="px-4 max-w-7xl mx-auto py-12 lg:py-16">
-      <div class="flex items-center space-x-3">
-        <img
-          class="h-10"
-          src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
-          alt="Company name"
-        />
-        <span>LOGO</span>
-      </div>
-      <div class="grid md:grid-cols-5 grid-cols-2 gap-6 lg:pt-14 pt-5">
-        <div
-          class="lg:space-y-8 space-y-4 flex flex-col justify-between col-span-2 lg:col-span-1"
-        >
-          <p class="text-gray-700 text-xs font-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsa
-            quam? Iure autem officiis saepe? Voluptate voluptatum alias impedit
-            ex! Ipsa porro enim hic itaque repellendus ex veritatis quasi vitae!
-          </p>
-          <div class="flex space-x-4">
-            <a
-              v-for="item in social"
-              :key="item.name"
-              :href="item.href"
-              class="text-gray-400 hover:text-gray-500"
-            >
-              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-            </a>
-          </div>
-        </div>
-        <div class="lg:pl-7" v-for="v in navigation" :key="v">
-          <h3 class="text-xs text-gray-600 font-medium">
-            {{ v.title }}
-          </h3>
-          <ul role="list" class="">
-            <li v-for="item in v.children" :key="item.name" class="leading-3">
-              <a
-                :href="item.href"
-                class="text-xs text-gray-500 font-light hover:text-gray-900"
-              >
-                {{ item.name }}
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="space-y-5 md:col-span-2 lg:col-span-1">
-          <div>
-            <h3 class="text-xs text-gray-600 font-medium">Syndesmos S.A</h3>
-            <p class="text-xs text-gray-500 font-light">
-              Lorem, ipsum dolor sit adipisicing elit.
-            </p>
-            <p class="text-xs text-gray-200 font-normal">
-              <span class="text-red-600 font-medium">T</span> 210 269 3600
-            </p>
-          </div>
-          <div>
-            <h3 class="text-xs text-gray-600 font-medium">GMP Facility</h3>
-            <p class="text-xs text-gray-500 font-light">
-              Lorem, ipsum dolor <br />sit adipisicing elit.
-            </p>
-          </div>
-          <div>
-            <p class="text-xs text-gray-200 font-normal">
-              <span class="text-red-600 font-medium">T</span> 210 269 3600
-            </p>
-            <p class="text-xs text-gray-200 font-normal whitespace-nowrap">
-              <span class="text-red-600 font-medium">E</span>
-              info@syndesmossa.com
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="border-t-6 border-white md:py-6 py-4 px-4">
+  <footer class="border-t border-gray-300 pt-3">
+    <div class="bg-[url('footer.png')] bg-no-repeat bg-cover">
       <div
-        class="max-w-7xl mx-auto flex md:flex-row flex-col items-center md:justify-between"
+        class="2xl:px-1 md:px-5 px-3 max-w-7xl mx-auto py-12 lg:pb-18 lg:pt-14"
       >
-        <p class="text-2xs text-gray-400 font-light text-center md:text-left">
-          &copy; 2020 <strong class="font-bold">Syndesmos S.A.</strong> All
-          rights reserved. <br class="md:hidden" />
-          <span
-            ><span class="hidden md:inline">|</span>
-            <a class="md:px-2 px-1" href="">Privacy Policy</a> |
-            <a class="md:px-2 px-1" href="">Cookie Policy</a> |
-            <a class="md:px-2 px-1" href="">Terms & Condition</a>
-          </span>
-        </p>
-        <div class="flex items-center space-x-2">
-          <p class="text-2xs text-gray-400 font-light">designed & developed</p>
-          <p class="text-sm text-black">LOGO</p>
+        <div>
+          <img class="h-15" src="/logo/syndesmos.svg" alt="Syndesmos" />
+        </div>
+        <div class="grid md:grid-cols-5 grid-cols-2 gap-6 lg:pt-16 pt-5 mt-1">
+          <div
+            class="lg:space-y-8 space-y-4 flex flex-col justify-between col-span-2 lg:col-span-1"
+          >
+            <p class="text-gray-700 text-xs font-light leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsa
+              quam? Iure autem officiis saepe? Voluptate voluptatum alias
+              impedit ex! Ipsa porro enim hic itaque repellendus ex veritatis
+              quasi vitae!
+            </p>
+            <div class="flex space-x-4">
+              <a
+                v-for="item in social"
+                :key="item.name"
+                :href="item.href"
+                class="text-gray-400 hover:text-gray-500"
+              >
+                <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+          <div class="lg:pl-7" v-for="v in navigation" :key="v">
+            <h3 class="text-xs text-gray-600 font-medium">
+              {{ v.title }}
+            </h3>
+            <ul role="list" class="">
+              <li v-for="item in v.children" :key="item.name" class="leading-4">
+                <a
+                  :href="item.href"
+                  class="text-xs text-gray-500 font-light hover:text-gray-900"
+                >
+                  {{ item.name }}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-5 md:col-span-2 lg:col-span-1">
+            <div>
+              <h3 class="text-xs text-gray-600 font-medium">Syndesmos S.A</h3>
+              <p class="text-xs text-gray-500 font-light">
+                Lorem, ipsum dolor sit adipisicing elit.
+              </p>
+              <p class="text-xs text-gray-200 font-normal">
+                <span class="text-red-600 font-medium">T</span> 210 269 3600
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xs text-gray-600 font-medium">GMP Facility</h3>
+              <p class="text-xs text-gray-500 font-light">
+                Lorem, ipsum dolor <br />sit adipisicing elit.
+              </p>
+            </div>
+            <div>
+              <p class="text-xs text-gray-200 font-normal">
+                <span class="text-red-600 font-medium">T</span> 210 269 3600
+              </p>
+              <p class="text-xs text-gray-200 font-normal whitespace-nowrap">
+                <span class="text-red-600 font-medium">E</span>
+                info@syndesmossa.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t-4 border-white md:py-5 py-4 px-4">
+        <div
+          class="max-w-7xl mx-auto flex md:flex-row flex-col items-center md:justify-between"
+        >
+          <p class="text-3xs text-gray-400 font-light text-center md:text-left">
+            &copy; 2020
+            <strong class="font-semibold">Syndesmos S.A.</strong> All rights
+            reserved. <br class="md:hidden" />
+            <span
+              ><span class="hidden md:inline">|</span>
+              <a class="md:px-1 px-0.5" href="">Privacy Policy</a> |
+              <a class="md:px-1 px-0.5" href="">Cookie Policy</a> |
+              <a class="md:px-1 px-0.5" href="">Terms & Condition</a>
+            </span>
+          </p>
+          <div class="flex items-center space-x-2">
+            <p class="text-3xs text-gray-400 font-light">
+              designed & developed
+            </p>
+            <p class="text-sm text-black">LOGO</p>
+          </div>
         </div>
       </div>
     </div>

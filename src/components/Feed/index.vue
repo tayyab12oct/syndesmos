@@ -4,12 +4,12 @@
     <div class="grid md:grid-cols-6 grid-cols-3 gap-1 md:pt-5 pt-3">
       <div v-for="v in 6" :key="v" class="group relative lg:h-54 h-30">
         <img
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+          src="hero/anti_hair_loss_solutions.png"
           alt="product"
           class="w-full h-full"
         />
         <div
-          class="absolute inset-0 invisible group-hover:visible transition-all cursor-pointer w-full group-hover:bg-gray-50 flex items-center justify-center"
+          class="absolute inset-0 invisible group-hover:visible transition-all cursor-pointer w-full group-hover:bg-gray-20 flex items-center justify-center"
         >
           <svg fill="white" viewBox="0 0 24 24" class="w-8">
             <path
