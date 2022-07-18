@@ -1,28 +1,109 @@
 <template>
-  <div class="border">
-    <div class="flex items-center justify-center border-b border-gray-700">
-      <img src="/products/anti_hair.png" alt="products" />
+  <div class="group" :class="mainClass">
+    <div>
+      <div class="flex items-center justify-center" :class="imgMainClass">
+        <img :src="src" alt="products" :class="imgClass" />
+      </div>
     </div>
-    <p class="text-center text-gray-600 font-light md:text-lg text-base pt-6">
-      {{ title }}
-    </p>
-    <p class="text-center text-gray-600 font-light md:text-lg text-base pt-6">
-      {{ desc }}
-    </p>
-    <p class="text-center text-gray-600 font-light md:text-lg text-base pt-6">
-      {{ subtitle }}
-    </p>
+    <div class="px-3 py-2 space-y-1">
+      <p class="text-gray-200 font-medium md:text-sm text-xs tracking-wide">
+        {{ title }}
+      </p>
+      <p
+        class="text-gray-600 font-light md:text-xs text-2xs h-9 overflow-hidden"
+      >
+        {{ desc }}
+      </p>
+      <p
+        class="text-gray-400 md:text-xs text-2xs group-hover:text-red-100"
+        :class="subtitleClass"
+      >
+        {{ subtitle }}
+      </p>
+    </div>
   </div>
 </template>
-<script setup>
-import { reactive } from "vue";
+<script setup lang="ts">
+import { withDefaults, reactive } from "vue";
 
-const products = reactive([
+const props = withDefaults(
+  defineProps<{
+    mainClass?: string;
+    imgMainClass?: string;
+    imgClass?: string;
+    subtitleClass?: string;
+    src?: string;
+    title?: string;
+    desc?: string;
+    subtitle?: string;
+  }>(),
   {
-    src: "/products/anti_hair.png",
-    title: "Woman's Placement Thinstrap",
-    desc: "Muscleback Swimmsuit Blue/Black",
-    subtitle: "Lorem ipsum dolor sit",
-  },
-]);
+    mainClass: "flex items-center border border-gray-50 py-4",
+    imgMainClass: "border-r border-gray-50 w-38",
+    imgClass: "h-32",
+    subtitleClass: "font-light",
+  }
+);
+// const products = reactive([
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+//   {
+//     src: "/products/anti_hair.png",
+//     title: "Woman's Placement Thinstrap",
+//     desc: "Muscleback Swimmsuit Blue/Black",
+//     subtitle: "Lorem ipsum dolor sit Lorem ipsum",
+//   },
+// ]);
 </script>
