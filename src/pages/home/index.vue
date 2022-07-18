@@ -7,7 +7,9 @@
     >
       <div class="">
         <h1 class="text-black md:text-xl text-lg pb-4 pt-5">Products</h1>
-        <div class="grid grid-cols-5 gap-6">
+        <div
+          class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-6 gap-4"
+        >
           <Product
             v-for="v in products"
             :key="v"
@@ -30,7 +32,7 @@
             View More
           </p>
         </div>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-6 gap-4">
           <Product v-for="v in sellers" :key="v" v-bind="v" />
         </div>
       </div>
