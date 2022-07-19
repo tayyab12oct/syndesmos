@@ -73,9 +73,9 @@
           Lorem ipsum
         </h1>
         <div
-          class="bg-primary grid grid-cols-3 items-center md:px-16 px-5 md:py-10 py-5"
+          class="bg-primary grid grid-cols-3 items-center lg:px-16 md:px-10 px-5 md:py-10 py-5"
         >
-          <div class="col-span-2 flex flex-col items-start md:px-5">
+          <div class="col-span-2 flex flex-col items-start lg:px-5">
             <p class="md:text-xl text-base font-light text-white tracking-wide">
               Lorem ipsum;
             </p>
