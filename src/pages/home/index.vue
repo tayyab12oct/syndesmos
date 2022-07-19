@@ -6,7 +6,7 @@
       class="2xl:px-1.5 md:px-5 px-3 max-w-8xl mx-auto space-y-4 md:py-6 py-3"
     >
       <div class="">
-        <h1 class="text-black md:text-xl text-lg pb-4 pt-5">Products</h1>
+        <h1 class="text-black md:text-xl text-lg pb-4 pt-5">New Products</h1>
         <div
           class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-6 gap-4"
         >
@@ -22,7 +22,19 @@
         </div>
       </div>
       <div class="">
-        <div class="flex items-center justify-between py-6">
+        <h1 class="text-black md:text-xl text-lg pb-6 pt-10">Category</h1>
+        <div
+          class="grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 md:gap-6 gap-4"
+        >
+          <CategorySlider v-for="v in 7" :key="v" v-bind="v" />
+        </div>
+      </div>
+      <Brands />
+      <div class="lg:py-22 py-8">
+        <Quote />
+      </div>
+      <div class="pb-20">
+        <div class="flex items-center justify-between py-7">
           <h1 class="text-black md:text-2xl text-lg tracking-tight">
             Best Sellers
           </h1>
@@ -36,10 +48,6 @@
           <Product v-for="v in sellers" :key="v" v-bind="v" />
         </div>
       </div>
-      <Brands />
-      <div class="lg:py-22 py-8">
-        <Quote />
-      </div>
       <Arrivals />
       <Services />
       <Feed />
@@ -52,6 +60,7 @@
 import TopBar from "../../components/TopBar/index.vue";
 import Hero from "../../components/Hero/index.vue";
 import Product from "../../components/common/product/index.vue";
+import CategorySlider from "../../components/category-slider/index.vue";
 import Brands from "../../components/Brands/index.vue";
 import Quote from "../../components/common/quote/index.vue";
 import Arrivals from "../../components/Arrivals/index.vue";
