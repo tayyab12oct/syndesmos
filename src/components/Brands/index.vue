@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-black md:text-xl text-lg pb-4 pt-5">Brands</h1>
+    <h1 class="text-black md:text-xl text-lg pb-5 pt-7">Brands</h1>
     <div
       class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-6 md:gap-3 gap-2"
     >
