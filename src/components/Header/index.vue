@@ -24,14 +24,14 @@
         />
       </div>
       <div class="flex items-end justify-end space-x-0.5 2xl:w-48 w-40">
-        <img src="icons/search.png" alt="search" class="2xl:w-8 w-6" />
-        <img src="icons/like.png" alt="like" class="2xl:w-9 w-7" />
-        <img src="icons/user.png" alt="user" class="2xl:w-8 w-6" />
-        <img src="icons/cart.png" alt="cart" class="2xl:w-10 w-7 -mb-1" />
+        <img src="/icons/search.png" alt="search" class="2xl:w-8 w-6" />
+        <img src="/icons/like.png" alt="like" class="2xl:w-9 w-7" />
+        <img src="/icons/user.png" alt="user" class="2xl:w-8 w-6" />
+        <img src="/icons/cart.png" alt="cart" class="2xl:w-10 w-7 -mb-1" />
       </div>
     </div>
   </div>
 </template>
 <script setup>
-import { MenuAlt1Icon, SearchIcon, HeartIcon } from "@heroicons/vue/outline";
+import { MenuAlt1Icon } from "@heroicons/vue/outline";
 </script>
