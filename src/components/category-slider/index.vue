@@ -35,11 +35,11 @@ const props = withDefaults(
   { src: "/brands/img5.png", title: "PACK" }
 );
 
-const settings = {
+const settings = reactive({
   itemsToShow: 1,
   snapAlign: "center",
-};
-const breakpoints = {
+});
+const breakpoints = reactive({
   200: {
     itemsToShow: 2,
     snapAlign: "start",
@@ -60,7 +60,7 @@ const breakpoints = {
     itemsToShow: 7,
     snapAlign: "start",
   },
-};
+});
 </script>
 <style>
 .carousel__prev {

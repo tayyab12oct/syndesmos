@@ -4,22 +4,24 @@
       <div class="relative h-full">
         <img src="/hero/img1.png" alt="Apivita" class="h-full w-full" />
         <div
-          class="absolute top-0 w-full h-1/2 flex flex-col justify-between bg-red-100 text-white px-7 pb-6 pt-4 text-right bg-opacity-90"
+          class="absolute top-0 w-full h-1/2 flex flex-col border justify-between bg-red-100 text-white lg:px-7 px-4 lg:pb-6 pb-2 lg:pt-4 pt-2 text-right bg-opacity-90"
         >
-          <h1 class="text-2xl 2xl:text-[28px] font-medium">
+          <h1 class="lg:text-2xl text-base 2xl:text-[28px] font-medium">
             lorem <br />
             & ipsum!
           </h1>
-          <p class="uppercase text-lg 2xl:text-xl font-light">kids care!</p>
+          <p class="uppercase lg:text-lg text-sm 2xl:text-xl font-light">
+            kids care!
+          </p>
         </div>
       </div>
     </div>
     <div class="lg:h-91 relative bg-primary lg:w-96">
       <div
-        class="w-full flex flex-col justify-between text-white px-7 pb-6 pt-4"
+        class="w-full flex flex-col justify-between text-white lg:px-7 px-4 lg:pb-6 md:pb-2 pb-8 lg:pt-4 pt-2"
       >
-        <h1 class="text-lg 2xl:text-2xl font-light w-58 leading-8">
-          <span class="text-8xl font-semibold">30</span>
+        <h1 class="text-lg 2xl:text-2xl font-light w-58 lg:leading-8">
+          <span class="xl:text-8xl text-7xl font-semibold">30</span>
           <span class="font-semibold">lorem</span> <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>
@@ -35,26 +37,30 @@
       <div
         class="absolute inset-0 w-full text-white bg-orange-100 bg-opacity-80 px-9 pt-5 text-right"
       >
-        <p class="text-lg 2xl:text-xl font-light">Sales</p>
-        <h1 class="text-2xl 2xl:text-[28px] font-medium max-w-xs ml-auto pt-2">
+        <p class="lg:text-lg text-md 2xl:text-xl font-light">Sales</p>
+        <h1
+          class="lg:text-2xl text-lg 2xl:text-[28px] font-medium max-w-xs ml-auto pt-2"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>
       </div>
     </div>
     <div class="lg:h-91 relative bg-yellow-original">
-      <div class="lg:w-[31.3rem] w-full">
+      <div class="lg:w-[31.3rem] w-full flex">
         <div
-          class="w-full flex flex-col justify-between text-black text-opacity-80 px-7 pb-6 pt-4"
+          class="w-full flex flex-col md:justify-between text-black text-opacity-80 lg:px-7 px-4 lg:pb-6 md:pb-2 lg:pt-4 md:pt-2 py-4"
         >
-          <p class="text-lg 2xl:text-xl font-light">new products</p>
-          <p class="text-lg 2xl:text-2xl font-medium pt-2 w-48 leading-8">
+          <p class="lg:text-lg text-md 2xl:text-xl font-light">new products</p>
+          <p
+            class="lg:text-lg text-md 2xl:text-2xl font-medium pt-2 w-48 lg:leading-8"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
         <img
           src="/hero/galesyn.png"
           alt=""
-          class="absolute bottom-0 right-0 lg:w-48 w-20"
+          class="md:absolute bottom-0 md:right-0 right-3 lg:w-48 md:w-20 w-28"
         />
       </div>
     </div>
@@ -66,10 +72,12 @@
           class="h-full w-full"
         />
         <div
-          class="absolute top-0 w-full flex flex-col justify-between text-white px-9 pt-5"
+          class="absolute top-0 w-full flex flex-col justify-between text-white lg:px-9 px-3 lg:pt-5 pt-2"
         >
-          <p class="text-lg 2xl:text-xl font-light">new products</p>
-          <h1 class="text-2xl 2xl:text-[28px] font-medium">new products</h1>
+          <p class="lg:text-lg text-md 2xl:text-xl font-light">new products</p>
+          <h1 class="lg:text-2xl text-lg 2xl:text-[28px] font-medium">
+            new products
+          </h1>
         </div>
       </div>
     </div>
