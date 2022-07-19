@@ -28,7 +28,9 @@
       :wrap-around="true"
     >
       <Slide v-for="slide in 5" :key="slide" class="lg:px-3 px-2">
-        <div class="carousel__item relative overflow-hidden w-full h-93">
+        <div
+          class="carousel__item relative overflow-hidden w-full md:h-93 h-72"
+        >
           <img
             src="/hero/woman-beach.png"
             alt="Apivita"

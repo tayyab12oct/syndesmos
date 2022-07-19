@@ -4,7 +4,7 @@
       <div class="relative h-full">
         <img src="/hero/img1.png" alt="Apivita" class="h-full w-full" />
         <div
-          class="absolute top-0 w-full h-1/2 flex flex-col border justify-between bg-red-100 text-white lg:px-7 px-4 lg:pb-6 pb-2 lg:pt-4 pt-2 text-right bg-opacity-90"
+          class="absolute top-0 w-full h-1/2 flex flex-col justify-between bg-red-100 text-white lg:px-7 px-4 lg:pb-6 pb-2 lg:pt-4 pt-2 text-right bg-opacity-90"
         >
           <h1 class="lg:text-2xl text-base 2xl:text-[28px] font-medium">
             lorem <br />
